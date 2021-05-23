@@ -32,7 +32,7 @@ public class Quest1094 {
 
         String[] numberList = numbers.split(" ");
 
-        for (int i = numberList.length - 1; i >= 0; i--) {
+        for (int i = count - 1; i >= 0; i--) {
             System.out.print(numberList[i] + " ");
         }
 
