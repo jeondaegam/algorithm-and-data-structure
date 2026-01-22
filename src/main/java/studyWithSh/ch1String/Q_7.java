@@ -1,4 +1,4 @@
-package studyWithSh.ch1;
+package studyWithSh.ch1String;
 
 import java.io.BufferedReader;
 import java.io.IOException;
