@@ -1,4 +1,4 @@
-package studyWithSh.ch2Array;
+package study202601.ch2Array;
 
 import java.util.Arrays;
 import java.util.Scanner;

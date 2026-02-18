@@ -1,4 +1,4 @@
-package studyWithSh.ch3;
+package study202601.ch3;
 
 import java.util.ArrayList;
 import java.util.Arrays;
