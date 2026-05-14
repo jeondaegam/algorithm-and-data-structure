@@ -11,7 +11,7 @@ public class doit003 {
      * 알고리즘: 누적 합 (Prefix Sum)
      * 시간복잡도: O(N + M)
      */
-    public static void main(String[] args) throws IOException {
+    public static void main2(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -47,6 +47,36 @@ public class doit003 {
         }
 
         System.out.print(sb);
+    }
+
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        int N = Integer.parseInt(st.nextToken());
+        int M = Integer.parseInt(st.nextToken());
+        int[] sumArr = new int[N + 1];
+
+        //합배열 만들기
+        st = new StringTokenizer(br.readLine());
+        for (int i = 1; i <= N; i++) {
+            int num = Integer.parseInt(st.nextToken());
+            sumArr[i] = sumArr[i - 1] + num; // 이전 합 + 현재 값을 더해 합배열에 저장 
+        }
+
+        StringBuilder sb = new StringBuilder();
+        // 구간합 구하기
+        for (int j = 0; j <M; j++) {
+            st = new StringTokenizer(br.readLine());
+            int start = Integer.parseInt(st.nextToken());
+            int end = Integer.parseInt(st.nextToken());
+            int result = sumArr[end] - sumArr[start - 1];
+            sb.append(result).append("\n");
+        }
+
+        System.out.print(sb);
+
     }
 }
 
