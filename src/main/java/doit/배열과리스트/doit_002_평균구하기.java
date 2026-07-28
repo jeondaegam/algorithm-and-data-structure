@@ -1,4 +1,4 @@
-package doitAlgorithm.배열과리스트;
+package doit.배열과리스트;
 
 import java.io.IOException;
 import java.util.Scanner;

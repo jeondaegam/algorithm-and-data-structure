@@ -1,4 +1,4 @@
-package doitAlgorithm.기초;
+package doit.기초;
 
 import java.util.Arrays;
 

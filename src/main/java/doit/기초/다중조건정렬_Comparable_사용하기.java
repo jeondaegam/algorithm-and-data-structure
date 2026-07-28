@@ -1,4 +1,4 @@
-package doitAlgorithm.기초;
+package doit.기초;
 
 public class 다중조건정렬_Comparable_사용하기 {
     /**
